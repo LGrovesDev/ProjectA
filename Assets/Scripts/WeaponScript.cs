@@ -30,7 +30,6 @@ public class WeaponScript : MonoBehaviour
 
     IEnumerator FireDelay()
     {
-        Debug.Log("here: " + canShoot);
         canShoot = false;
         yield return new WaitForSeconds(fireRate);
         canShoot = true;
